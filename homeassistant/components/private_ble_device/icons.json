@@ -16,5 +16,10 @@
         "default": "mdi:signal-distance-variant"
       }
     }
+  },
+  "services": {
+    "register_irk": {
+      "service": "mdi:key-wireless"
+    }
   }
 }

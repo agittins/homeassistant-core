@@ -5,7 +5,8 @@
     },
     "error": {
       "irk_not_found": "The provided IRK does not match any BLE devices that Home Assistant can see.",
-      "irk_not_valid": "The key does not look like a valid IRK."
+      "irk_not_valid": "The key does not look like a valid IRK.",
+      "irk_already_configured": "The IRK has already been configured."
     },
     "flow_title": "{name}",
     "step": {
@@ -27,6 +28,18 @@
       },
       "power": {
         "name": "Power"
+      }
+    }
+  },
+  "services": {
+    "register_irk": {
+      "name": "Register a new IRK",
+      "description": "Register a new IRK with the Private BLE Device integration",
+      "fields": {
+        "irk": {
+          "description": "IRK as a 16-Byte hex string or base64 encoded",
+          "name": "IRK"
+        }
       }
     }
   }
